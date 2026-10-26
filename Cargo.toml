@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-boot-config"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Boot configuration"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-boot-config"
+readme = "README.md"
+keywords = ["boot", "config", "grub"]
+categories = ["os"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
